@@ -1,7 +1,7 @@
 ---
 title: 《决策树算法的Python实现》笔记
 date: 2016-08-12 11:10:13
-tags: [maching-learning, python, decision-tree]
+tags: [maching-learning, python, decision-tree, 笔记]
 ---
 
 > 参照：

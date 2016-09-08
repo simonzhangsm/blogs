@@ -1,7 +1,7 @@
 ---
 title: 朴素贝叶斯法
 date: 2016-09-08 13:44:41
-tags: [naive-Bayes, 分类算法, 极大似然估计]
+tags: [naive-Bayes, 分类算法, 极大似然估计, 笔记]
 ---
 
 ## 朴素贝叶斯公式
@@ -16,7 +16,8 @@ P\left(Y\_i|X\right) = {P\left(X|Y\_i\right)P\left(Y\_i\right) \over \sum\_{k=1}
 
 > `先验概率`和`后验概率`
 >
-> `先验概率`是在缺乏某个事实的情况下描述一个变量; 而后验概率是在考虑了一个事实之后的条件概率.  先验概率通常是经验丰富的专家的纯主观的估计. 比如在法国大选中女候选罗雅尔的支持率 p,  在进行民意调查之前, 可以先验概率来表达这个不确定性.
+> 先验概率是在缺乏某个事实的情况下描述一个变量；而后验概率是在考虑了一个事实之后的条件概率.  
+> `先验概率`通常是经验丰富的专家的纯主观的估计. 比如在法国大选中女候选罗雅尔的支持率 p,  在进行民意调查之前, 可以先验概率来表达这个不确定性.
 >
 > `后验概率`: Probability of outcomes of an experiment after it has been performed and a certain event has occured.  
 > See:<http://blog.sina.com.cn/s/blog_4ce95d300100fwz3.html>
