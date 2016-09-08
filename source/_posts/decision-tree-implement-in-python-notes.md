@@ -180,6 +180,10 @@ N\_{tk}：& 叶子节点t中k类样本个数,k＝1,2,...,K \\\
 2. 递归地从叶子向上回溯，如果将某节点和所以的叶子合并，其损失函数值减小，则进行剪枝
 3. 继续2直到不能合并或根节点为止
 
+代码：
+<https://github.com/yungoo/maching-learning-quiz/blob/master/decision-tree/dt-cart.py>
+<https://github.com/yungoo/maching-learning-quiz/blob/master/decision-tree/dt-c45.py>
+
 
 
 
