@@ -14,6 +14,14 @@ tags: [naive-Bayes, 分类算法, 极大似然估计]
 P\left(Y\_i|X\right) = {P\left(X|Y\_i\right)P\left(Y\_i\right) \over \sum\_{k=1}^n P\left(X|Y\_i\right)P\left(Y\_i\right)}
 \\]
 
+> `先验概率`和`后验概率`
+>
+> `先验概率`是在缺乏某个事实的情况下描述一个变量; 而后验概率是在考虑了一个事实之后的条件概率.  先验概率通常是经验丰富的专家的纯主观的估计. 比如在法国大选中女候选罗雅尔的支持率 p,  在进行民意调查之前, 可以先验概率来表达这个不确定性.
+>
+> `后验概率`: Probability of outcomes of an experiment after it has been performed and a certain event has occured.  
+> See:<http://blog.sina.com.cn/s/blog_4ce95d300100fwz3.html>
+
+
 `特征条件独立假设`：
 
 条件概率分布
@@ -91,18 +99,18 @@ P(X^{(j)}=a\_{jl} | Y=c\_k) = {\sum\_{i=1}^N {I(x\_i^{(j)}=a\_{jl}, y\_i=c\_k)} 
 
 1. 计算先验概率及条件概率
 
-\\[\begin{aligned}
+	\\[\begin{aligned}
 P(Y=c\_k) &= {\sum\_{i=1}^N {I(y\_i=c\_k)} \over N},  k=1,2,\cdots,K \\\
 P(X^{(j)}=a\_{jl}|Y=c\_k) &= {\sum\_{i=1}^N {I(x\_i^{(j)}=a\_{jl}, y\_i=c\_k)} \over \sum\_{i=1}^N {I(y\_i=c\_k)}}, j=1,2,\cdots,n, l=1,2,\cdots,S\_j, y\_i \in \\{c\_1, c\_2, \cdots, c\_k\\}
 \end{aligned}\\]
 
 2. 对于给定的实例 $$$\vec{x\_i}=(x\_i^{(1)}, x\_i^{(2)}, \cdots, x\_i^{(N)})^T$$$，计算
 
-\\[ {P(Y=c\_k) \prod\_{j=1}^n P(X^{(j)}=x^{(j)} | Y=c\_k)}, k=1,2,\cdots,K \\]
+	\\[ {P(Y=c\_k) \prod\_{j=1}^n P(X^{(j)}=x^{(j)} | Y=c\_k)}, k=1,2,\cdots,K \\]
 	
 3. 确定实例 $$$\vec{x}$$$ 的分类
 
-\\[
+	\\[
 y = arg \max\_{c\_k} {P(Y=c\_k) \prod\_{j=1}^n P(X^{(j)}=x^{(j)} | Y=c\_k)}
 \\]
 
